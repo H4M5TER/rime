@@ -1,0 +1,4 @@
+install_files: >-
+  default.custom.yaml
+  rime_ice.custom.yaml
+  weasel.custom.yaml
