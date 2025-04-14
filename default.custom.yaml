@@ -1,0 +1,30 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.16.3
+  generator: "Rime::SwitcherSettings"
+  modified_time: "Wed Apr  9 05:51:19 2025"
+  rime_version: 1.11.2
+patch:
+  schema_list:
+  - { schema: rime_ice }
+  - { schema: japanese }
+  "switcher/hotkeys":
+  - F4
+  "ascii_composer/switch_key":
+    Caps_Lock: commit_code
+    Control_L: noop
+    Control_R: noop
+    Shift_L: commit_code
+    Shift_R: commit_code
+  # "menu/page_size": 5
+  # "punctuator/half_shape/+":
+  #   "\"": "\""
+  #   "'": "'"
+  #   "(": "("
+  #   ")": ")"
+  #   "<": "<"
+  #   ">": ">"
+  #   "[": "「"
+  #   "]": "」"
+  #   "{": "{"
+  #   "}": "}"

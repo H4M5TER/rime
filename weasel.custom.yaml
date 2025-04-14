@@ -1,0 +1,22 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.15.0.0
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Sat Mar  2 04:28:14 2024"
+  rime_version: 1.10.0
+patch:
+  "app_options/+":
+    cmd.exe: { ascii_mode: true }
+    code.exe: { ascii_mode: true }
+    conhost.exe: { ascii_mode: true }
+    crawl.exe: { ascii_mode: true }
+    eudic.exe: { ascii_mode: true }
+    powertoys.powerlauncher.exe: { ascii_mode: true }
+    procexp64.exe: { ascii_mode: true }
+    taskmgr.exe: { ascii_mode: true }
+    windowsterminal.exe: { ascii_mode: true }
+  "style/+":
+    color_scheme: ink
+    display_tray_icon: true
+    font_face: "LXGW WenKai"
+    horizontal: false

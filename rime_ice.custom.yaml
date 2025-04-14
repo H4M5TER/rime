@@ -1,0 +1,22 @@
+patch:
+  # grammar:
+  #   language: zh-hans-t-essay-bgw
+  # translator/contextual_suggestions: true # https://github.com/iDvel/rime-ice/issues/407
+  # translator/max_homophones: 7
+  # translator/max_homographs: 7
+  reduce_english_filter/mode: all
+  pin_cand_filter: []
+  engine/filters:
+  - lua_filter@*corrector # 错音错字提示
+  - reverse_lookup_filter@radical_reverse_lookup # 部件拆字滤镜
+  - lua_filter@*autocap_filter # 英文自动大写
+  - lua_filter@*v_filter # v 模式 symbols 优先
+  - lua_filter@*pin_cand_filter # 置顶候选项（顺序要求：置顶候选项 > Emoji > 简繁切换）
+  - lua_filter@*long_word_filter # 长词优先（顺序要求：长词优先 > Emoji）
+  - lua_filter@*reduce_english_filter # 降低部分英语单词在候选项的位置
+  - simplifier@emoji # Emoji
+  - simplifier@traditionalize # 简繁切换
+  - lua_filter@*search@radical_pinyin # 部件拆字辅码
+  - uniquifier # 去重
+  - lua_filter@*is_in_user_dict # 用户词典过滤器
+  - lua_filter@*en_spacer #英文词条上屏自动空格
